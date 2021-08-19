@@ -332,7 +332,13 @@ const ExamplePage = ({ example }: { example: string }) => {
           </Warning>
         ) : (
           <ExampleContent>
-            <Component />
+            {
+              [...Array(1000).keys()].map(n => {
+                return <div key={n}>
+                  <Component />
+                </div>
+              })
+            }
           </ExampleContent>
         )}
         <TabListUnderlay
