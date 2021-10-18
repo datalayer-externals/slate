@@ -3559,23 +3559,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^16.9.4":
-  version: 16.9.14
-  resolution: "@types/react-dom@npm:16.9.14"
+"@types/react-dom@npm:17.0.5":
+  version: 17.0.5
+  resolution: "@types/react-dom@npm:17.0.5"
   dependencies:
-    "@types/react": ^16
-  checksum: 68a4ee88f7a56cdbfbca24b1936b9aa5dad8b40ffbf1f047ddf990454aec6e0c9da2a01c9ae87045e95236602061646c90d02f01281533e14f1970687873030f
+    "@types/react": "*"
+  checksum: ff301198c621864e1ee6c566285dc5cdc9eb5d881ca7fe7fcb8ebf29afe0357ffb7f77e401ab81ff444c64ff1375f653eeb28f04cd088a361915dee31cb3f4a8
   languageName: node
   linkType: hard
 
-"@types/react@npm:^16, @types/react@npm:^16.9.13":
-  version: 16.14.13
-  resolution: "@types/react@npm:16.14.13"
+"@types/react@npm:*":
+  version: 17.0.30
+  resolution: "@types/react@npm:17.0.30"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: e611872c09eeb2abfae2de3ebf570065e346be8997c795c5652be0fb0d342c3749b1eabffba61c665f595c40432aff117f9f2079f6d9e7b7cf22d8e0179b21f0
+  checksum: e3aaac1b8fda6e3622b75db0bd7d8dc412c2f2b77a00afdd32cae8c71fb0b1ca6926ab1fbe1c536dd51d96c0ba372738993837a8df1637637aaab7b86e421b7f
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:17.0.6":
+  version: 17.0.6
+  resolution: "@types/react@npm:17.0.6"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: dd687a9620d90cc7b9e50ed06ec73beb589fcb7ddfec7b166307af79cee7c521c1f2f1084ffd4ad6eaf7c937cfa446cc0b03cc3cd18e85e952501da2f2e0e0c3
   languageName: node
   linkType: hard
 
@@ -13079,7 +13090,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:>=16.8.0":
+"react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -13089,20 +13100,6 @@ __metadata:
   peerDependencies:
     react: 17.0.2
   checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
-  languageName: node
-  linkType: hard
-
-"react-dom@npm:^16.12.0":
-  version: 16.14.0
-  resolution: "react-dom@npm:16.14.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-    scheduler: ^0.19.1
-  peerDependencies:
-    react: ^16.14.0
-  checksum: 5a5c49da0f106b2655a69f96c622c347febcd10532db391c262b26aec225b235357d9da1834103457683482ab1b229af7a50f6927a6b70e53150275e31785544
   languageName: node
   linkType: hard
 
@@ -13209,24 +13206,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:>=16.8.0":
+"react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
   checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
-  languageName: node
-  linkType: hard
-
-"react@npm:^16.12.0":
-  version: 16.14.0
-  resolution: "react@npm:16.14.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
   languageName: node
   linkType: hard
 
@@ -14071,16 +14057,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.19.1":
-  version: 0.19.1
-  resolution: "scheduler@npm:0.19.1"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-  checksum: 73e185a59e2ff5aa3609f5b9cb97ddd376f89e1610579d29939d952411ca6eb7a24907a4ea4556569dacb931467a1a4a56d94fe809ef713aa76748642cd96a6c
-  languageName: node
-  linkType: hard
-
 "scheduler@npm:^0.20.2":
   version: 0.20.2
   resolution: "scheduler@npm:0.20.2"
@@ -14356,8 +14332,8 @@ resolve@^2.0.0-next.3:
     "@types/lodash": ^4.14.149
     "@types/mocha": ^5.2.7
     "@types/node": ^12.12.14
-    "@types/react": ^16.9.13
-    "@types/react-dom": ^16.9.4
+    "@types/react": 17.0.6
+    "@types/react-dom": 17.0.5
     "@typescript-eslint/eslint-plugin": ^2.9.0
     "@typescript-eslint/parser": ^2.9.0
     babel-eslint: ^10.0.3
@@ -14384,8 +14360,8 @@ resolve@^2.0.0-next.3:
     npm-run-all: ^4.1.2
     prettier: ^1.19.1
     prismjs: ^1.5.1
-    react: ^16.12.0
-    react-dom: ^16.12.0
+    react: 17.0.2
+    react-dom: 17.0.2
     react-error-boundary: ^1.2.5
     react-router-dom: ^5.1.2
     react-values: ^0.3.0
@@ -14418,15 +14394,15 @@ resolve@^2.0.0-next.3:
     "@babel/runtime": ^7.7.4
     "@types/is-hotkey": ^0.1.1
     "@types/lodash": ^4.14.149
-    "@types/react": ^16.9.13
-    "@types/react-dom": ^16.9.4
+    "@types/react": 17.0.6
+    "@types/react-dom": 17.0.5
     direction: ^1.0.3
     is-hotkey: ^0.1.6
     is-plain-object: ^5.0.0
     jsdom: ^16.6.0
     lodash: ^4.17.4
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
+    react: 17.0.2
+    react-dom: 17.0.2
     react-test-renderer: ">=16.8.0"
     scroll-into-view-if-needed: ^2.2.20
     slate: ^0.66.2
